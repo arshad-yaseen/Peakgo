@@ -1,0 +1,243 @@
+
+@font-face {
+    font-family: 'peakgo-bold';
+    src: url('../public/assets/fonts/CircularStd-Bold.otf');
+}
+@font-face {
+    font-family: 'peakgo-book';
+    src: url('../public/assets/fonts/CircularStd-Book.otf');
+}
+@font-face {
+    font-family: 'peakgo-black';
+    src: url('../public/assets/fonts/CircularStd-Black.otf');
+}
+@font-face {
+    font-family: 'peakgo-medium';
+    src: url('../public/assets/fonts/CircularStd-Medium.otf');
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+*::webkit-scrollbar{
+  display: none;
+}
+
+/* CUSTOM CLASSES */
+:root {
+    --secondary-color: #1ed460;
+    --primary-color: #0065ff;
+  }
+  
+  /* COLOR CLASSESS */
+  .text-primary {
+    color: var(--primary-color);
+  }
+  .text-secondary {
+    color: var(--secondary-color);
+  }
+  .text-dark-gray{
+    color: #060606 ;
+  }
+  
+  /* BACKGROUND CLASSES */
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
+  .bg-secondary {
+    background-color: var(--secondary-color);
+  }
+  .bg-dark-gray{
+    background-color: #030303;
+  }
+  
+  /* ATHOR CLASSES */
+  .border-light {
+    border: 1px solid #ffffff0b;
+  }
+  .border-b-light {
+    border-bottom: 1px solid #0000000b;
+  }
+  .border-l-light {
+    border-left: 1px solid #0000000b;
+  }
+  .border-r-light {
+    border-right: 1px solid #0000000b;
+  }
+  .border-t-light {
+    border-top: 1px solid #0000000b;
+  }
+
+  /* FONT CLASSESS */
+  .font-peakgo-bold {
+    font-family: 'peakgo-bold';
+  }
+  .font-peakgo-black {
+    font-family: 'peakgo-black';
+  }
+  .font-peakgo-book {
+    font-family: 'peakgo-book';
+  }
+  .font-peakgo-medium {
+    font-family: 'peakgo-medium';
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'peakgo-black';
+    scroll-behavior: smooth;
+}
+.slide-banner-image{
+    height: 550px;
+    filter: brightness(80%)
+}
+.banner-overlay{
+    height: 500px;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    
+}
+.feather-dark-overlay{
+    background-color: black;
+    filter: blur(150px);
+    height: 500px;
+    width: 40%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    transform: scale(2.3);
+}
+.hero-poster-image{
+    height: 400px;
+    border-radius: 10px;
+    animation: move 4.8s infinite ease-in-out;
+    opacity: 0;
+    
+}
+.banner-text{
+    width: 550px;
+    animation: move 4.8s infinite ease-in-out;
+    animation-delay:.2s;
+    opacity: 0;
+    
+}
+.banner-description{
+    animation: move 4.8s infinite ease-in-out;
+    animation-delay:.4s;
+    opacity: 0;
+    
+}
+.banner-button-1{
+    animation: move 4.8s infinite ease-in-out;
+    animation-delay:.6s;
+    opacity: 0;
+    
+}
+.banner-button-2{
+    animation: move 4.8s infinite ease-in-out;
+    animation-delay:.8s;
+    opacity: 0;
+    
+}
+
+@keyframes move{
+    100% {
+        transform: translateY(-40px, 0);
+        opacity: 0;
+      }
+      41%{
+        opacity: 1;
+      }
+      20%{
+        transform: translateY(-40px, 0);
+      }
+      10% {
+        opacity: 1;
+      }
+      0%{
+        opacity: 0;
+      }
+}
+
+
+.movie-posters-wrapper{
+    height: 500px;
+}
+.poster{
+  min-width: 233px;
+  max-width: 240px;
+  min-height: 345px;
+  max-height: 345px;
+}
+.poster-title{
+  width: 250px;
+}
+.poster-wrapper{
+  min-width: 300px;
+}
+.poster:hover{
+  transform: scale(1.02);
+}
+.moreinfo-banner-wrapper{
+  height:700px;
+}
+.moreinfo-banner-overlay{
+  width: 110%;
+  margin-left: -5%;
+  background-color: black;
+  height: 450px;
+  filter: blur(50px);
+}
+.moreinfo-banner{
+  filter: brightness(40%)
+}
+.moreinfo-hero-wrapper{
+  height: 800px;
+}
+.moreinfo-hero-poster{
+  height: 500px;
+  border-radius: 20px;
+}
+.cast-image-wrapper{
+  min-width: 150px;
+}
+.cast-wrapper::-webkit-scrollbar{
+  display: none;
+}
+.bar-informations h1{
+  line-height: 55px;
+}
+.trailer-div-1{
+  height: 10%;
+}
+.trailer-div-2{
+  height: 80%;
+}
+.trailer-div-3{
+  height: 10%;
+}
+.crew-wrapper{
+  min-width: 200px;
+}
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+.bg-lite-black {
+  background-color: rgb(13, 13, 13);
+}
+.cast-name{
+  bottom: -110px;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+.cast-image-wrapper:hover .cast-name{
+  bottom: 0;
+  opacity: 1;
+}
+.cast-image-wrapper{
+  min-width: 180px;
+}
